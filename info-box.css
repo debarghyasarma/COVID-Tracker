@@ -1,0 +1,113 @@
+.body {
+  background-image: url("coronaimage.jfif");
+}
+
+.heading {
+  margin-top: 4.5px;
+  margin-left: 30px;
+  height: 10px;
+  font-weight: bold;
+  color: white;
+}
+.form-group {
+  margin-top: 10px;
+  width: 130px;
+  margin-left: 854px;
+  height: 10px;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2px 8px;
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 300px;
+  height: 99px;
+  background-color: #56f7e8;
+  border-radius: 10px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2px 8px;
+  margin-top: 30px;
+  margin-left: 31.5px;
+  width: 300px;
+  height: 99px;
+  background-color: #72f15b;
+  border-radius: 10px;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2px 8px;
+  margin-top: 30px;
+  margin-left: 31px;
+  width: 300px;
+  height: 99px;
+  background-color: #fcb394;
+  border-radius: 10px;
+}
+
+.app-right {
+  float: right;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.float-right {
+  font-weight: 100;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  color: black;
+}
+.cases {
+  font-weight: bold;
+}
+.card {
+  height: 580x;
+  padding: 9px;
+  width: 350px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  margin-top: 0.5px;
+}
+
+.table {
+  font-weight: 500;
+}
+
+.table tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}
+.table-area {
+  font-weight: bold;
+  overflow: scroll;
+  height: 580px;
+  margin-right: 1px;
+}
+.chart-section {
+  height: 460px;
+  padding-left: 77px;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-left: 19px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  background-color: #f8c776;
+}
+
+.chart-container {
+  margin-top: 12.5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Online Tracking Page</title>
+    <link rel="stylesheet" href="info-box.css" />
+      
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  <body class="body">
+<div class="app">
+
+  <div class="app-left float-left"> 
+    <div>
+      <h4 class="heading" style="float: left">COVID-19 Tracker</h3>
+       <div class="form-group"> 
+         <select  class="form-control" name="countries" id="countries-dropdown"></select>
+       </div>
+    </div>
+   
+    <div class="horizontal">
+      <div class="card1">
+      <!-- Infobox1: Coronavirus cases -->
+        <div class="infobox-title ml-0">
+          <h6 class="mt-1">Coronavirus Cases</h6> <h5 class="float-right mb-1">Today</h5>
+          <h5 id="todayCases" class="cases"></h5> <h5 class="float-right mb-1">Total</h5>
+          <h5 id="cases" class="cases"></h5> 
+        </div>
+      </div>    
+
+    <div class="card2"> 
+      <!-- Infobox2: Coronavirus recoveries -->
+      <div class="recoveries">
+        <h6 class="mt-1">Coronavirus Recoveries</h6>  <h5 class="float-right mb-1">Today</h5>
+        <h5 id="todayRecovered" class="cases"></h5> <h5 class="float-right mb-1">Total</h5>
+        <h5 id="recovered" class="cases"></h5>
+      </div>
+    </div>    
+    
+    <div class="card3">
+      <!-- Infobox3: Coronavirus dealths -->
+      <div class="dealths">
+        <h6 class="mt-1">Coronavirus Dealths</h6>  <h5 class="float-right mb-1">Today</h5>
+        <h5 id="todayDealth" class="cases"></h5> <h5 class="float-right mb-1">Total</h5>
+        <h5 id="dealths" class="cases"></h5>
+      </div>
+    </div>
+    </div>
+
+    <div class="chart-section">
+      <div class="chart-container" id="chart-section"> 
+          
+       </div> 
+    </div>
+  </div>
+
+  <div class="app-right">
+     <div class="card">
+       <h4 class="ml-5 mr-1  mt-0" id="live-cases">Live cases by country</h4>
+       <div id="table-area" class="table-area">
+       <table class="table" id="table">        
+       </table> 
+     </div>
+     </div>
+ </div> 
+
+</div>
+  
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>   
+<script src="script.js"></script>
+
+    <!-- <script src="https://www.google.com/jsapi"></script> -->
+  
+  </body>
+</html>
