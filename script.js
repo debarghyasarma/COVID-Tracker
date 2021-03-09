@@ -35,10 +35,39 @@ request.onload = function () {
       document.getElementById("dealths").innerText = data.deaths;
 
       Table();
-      google.charts.load("current", { packages: ["corechart"] });
-      google.charts.setOnLoadCallback(
-        axesLinearchart(data.cases, data.recovered, data.deaths)
-      );
+       google.charts.load("current", { packages: ["corechart"] });
+       google.charts.setOnLoadCallback(ColumnChart);
+       function ColumnChart() {
+        var data1 = google.visualization.arrayToDataTable([
+          ["CoronaDetails", "Number", { role: "style" }],
+          ["Cases", data.cases, "#037DD6"],
+          ["Recoveries", data.recovered, "#03FF5B"],
+          ["Dealths", data.deaths, "#F62D00"],
+        ]);
+        var view = new google.visualization.DataView(data1);
+        view.setColumns([
+          0,
+          1,
+          {
+            calc: "stringify",
+            sourceColumn: 1,
+            type: "string",
+            role: "annotation",
+          },
+          2,
+        ]);
+        var options = {
+          title: "COVID-Graph",
+          width: 800,
+          height: 400,
+          bar: { groupWidth: "95%" },
+          legend: { position: "none" },
+        };
+        var chart = new google.visualization.ColumnChart(
+          document.getElementById("chart-section")
+        );
+        chart.draw(view, options);
+      }
     };
     request.send();
 
